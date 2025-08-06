@@ -76,7 +76,7 @@ const handleSurvey = async (req, res) => {
 
   const mailDetails = {
     from: `"EduPlus Survey" <${MAILER_CONFIG.from}>`,
-    to: "muhammadahsanty@gmail.com", 
+    to: MAILER_CONFIG.clientEmail, 
     subject: "📋 EduPlus Survey Submission Results",
     html: htmlContent,
   };
